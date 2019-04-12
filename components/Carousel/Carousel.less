@@ -36,6 +36,17 @@
   }
   img {
     .width-100();
-    display: none;
+    
+      .img-hide {
+          width: 0%;
+          visibility: hidden;
+          transition: 200ms;
+      }
+      
+      .img-show {
+          visibility: visible;
+          transition: 200ms;
+          z-index: -1;
+      }
   }
 }
