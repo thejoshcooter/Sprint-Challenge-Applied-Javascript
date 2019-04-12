@@ -300,5 +300,14 @@ body {
 }
 .carousel img {
   width: 100%;
-  display: none;
+}
+.carousel img .img-hide {
+  width: 0%;
+  visibility: hidden;
+  transition: 200ms;
+}
+.carousel img .img-show {
+  visibility: visible;
+  transition: 200ms;
+  z-index: -1;
 }
